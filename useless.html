@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>button</title>
+        <style>
+body {
+  background-color: rgb(179, 240, 255);
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+button {
+    background-color: #5ecf61; 
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #09600e;
+}
+
+        </style>
+    </head>
+    <body>
+    <h1>button</h1>
+    <button type="button" onclick="myFunction()">button</button>
+    <p id="buttone"></p>
+    <script>
+    function myFunction() {
+        document.getElementById("buttone").textContent = "wow you clicked on the button!!";
+    }
+        </script>
+    </body>
+</html>
